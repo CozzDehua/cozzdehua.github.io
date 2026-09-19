@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="XieChengzong — Graduate Student, School of Cyber Science and Technology, Shandong University. Research, projects and personal notes.">
+  <meta name="theme-color" content="#f8fafc">
+  <meta name="color-scheme" content="light">
+  <title>Cozz. | XieChengzong</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <!-- 本地图标库：纯 SVG，不依赖外部字体或网络；图标为装饰，文字提供含义。 -->
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="icon-cap" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v6c4 3 8 3 12 0v-6M22 9v7"/></symbol>
+      <symbol id="icon-location" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+      <symbol id="icon-building" viewBox="0 0 24 24"><path d="m3 8 9-5 9 5H3ZM5 10v9m5-9v9m4-9v9m5-9v9M3 21h18"/></symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+      <symbol id="icon-robot" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="13" rx="4"/><path d="M12 7V4M1 12v4m22-4v4M9 16h6"/><circle cx="12" cy="3" r="1"/><circle cx="8.5" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="15.5" cy="12" r="1" fill="currentColor" stroke="none"/></symbol>
+      <symbol id="icon-research" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6M7 10h6m-3-3v6"/></symbol>
+      <symbol id="icon-paper" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8l-5-5Zm0 0v5h5M8 12h8m-8 4h6"/></symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 8h18m-12 3-3 3 3 3m6-6 3 3-3 3"/></symbol>
+      <symbol id="icon-case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V3h8v4M3 12c5 4 13 4 18 0M12 12v4"/></symbol>
+      <symbol id="icon-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8 14-2 7 6-3 6 3-2-7"/></symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="icon-id" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="8" cy="10" r="2"/><path d="M5 16c0-3 6-3 6 0m3-7h4m-4 4h4m-4 4h2"/></symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.07c-3.09.67-3.74-1.31-3.74-1.31-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.7 1.14 1.7 1.14.99 1.7 2.6 1.21 3.23.92.1-.72.39-1.21.7-1.49-2.46-.28-5.05-1.23-5.05-5.49 0-1.21.43-2.2 1.14-2.98-.11-.28-.5-1.41.11-2.94 0 0 .93-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.12-1.44 3.04-1.14 3.04-1.14.61 1.53.23 2.66.12 2.94.71.78 1.14 1.77 1.14 2.98 0 4.27-2.6 5.21-5.07 5.49.4.34.75 1.02.75 2.06v3.05c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></symbol>
+    </defs>
+  </svg>
+  <!-- 英文正文是默认内容；data-zh 保存对应中文，切换时只修改文本。 -->
+  <a class="skip-link" href="#main" data-zh="跳转到主要内容">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#home" aria-label="Cozz. home" data-zh-label="Cozz. 首页"><span class="mark" aria-hidden="true">Cozz<span>.</span></span><span class="wordmark-label" data-zh="个人主页">A PERSONAL SPACE</span></a>
+      <div class="header-controls">
+        <nav aria-label="Main navigation" data-zh-label="主导航">
+          <a href="#about" data-zh="关于">About</a>
+          <a href="#research" data-zh="研究">Research</a>
+          <a href="#publications" data-zh="论文">Publications</a>
+          <a href="#projects" data-zh="项目">Projects</a>
+          <a href="#education" data-zh="教育经历">Education</a>
+          <a href="#work" data-zh="工作经历">Work experience</a>
+          <a href="#awards" data-zh="获奖经历">Honors &amp; awards</a>
+          <a href="blog.html" data-zh="博客">Blog</a>
+          <a href="#contact"><span data-zh="联系">Contact</span> <span aria-hidden="true">↗</span></a>
+        </nav>
+        <div class="language-switch" role="group" aria-label="Language" data-zh-label="语言" hidden>
+          <button type="button" data-language="en" lang="en" aria-pressed="true" aria-label="Switch to English">EN</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-language="zh" lang="zh-CN" aria-pressed="false" aria-label="切换到中文">中文</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-layout">
+    <aside class="profile" aria-label="Personal profile" data-zh-label="个人资料">
+      <img class="avatar portrait" src="assets/avatar.jpg" alt="Chengzong Xie" width="840" height="1260" decoding="async">
+      <p class="eyebrow" data-zh="关于我">BEHIND THE PAGE</p>
+      <p class="profile-name">XieChengzong</p>
+      <p class="profile-role icon-text"><svg class="icon" aria-hidden="true"><use href="#icon-cap"/></svg><span data-zh="研究生">Graduate Student</span></p>
+      <p class="affiliation"><span class="icon-text"><svg class="icon" aria-hidden="true"><use href="#icon-building"/></svg><span data-zh="山东大学">Shandong University</span></span><span class="icon-text"><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg><span data-zh="网络空间安全学院">School of Cyber Science and Technology</span></span></p>
+      <div class="profile-links" aria-label="Location and academic links" data-zh-label="所在地与学术链接">
+        <span class="pending-link profile-location"><span class="icon-text"><svg class="icon" aria-hidden="true"><use href="#icon-location"/></svg><span data-zh="中国青岛">Qingdao, China</span></span></span>
+        <!-- 获取真实网址后，将对应外层 span 替换为带 href 的 a。 -->
+        <a class="pending-link" href="https://github.com/CozzDehua" target="_blank" rel="noopener noreferrer" aria-label="GitHub: CozzDehua (opens in a new tab)" data-zh-label="GitHub：CozzDehua（在新标签页打开）"><span class="icon-text"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>GitHub</span></a>
+        <span class="pending-link"><span class="icon-text"><svg class="icon" aria-hidden="true"><use href="#icon-cap"/></svg>Google Scholar</span></span>
+        <span class="pending-link"><span class="icon-text"><svg class="icon" aria-hidden="true"><use href="#icon-id"/></svg>ORCID</span></span>
+      </div>
+    </aside>
+
+    <main id="main" tabindex="0" aria-label="Main content" data-zh-label="主要内容">
+      <div id="home" aria-hidden="true"></div>
+      <section class="intro" id="about" aria-labelledby="intro-title">
+        <div class="section-kicker"><span class="icon-text"><svg class="icon" aria-hidden="true"><use href="#icon-cap"/></svg><span data-zh="01 / 关于">01 / INTRODUCTION</span></span><span class="edition" data-zh="保持好奇，持续探索">STAY CURIOUS.</span></div>
+        <h1 id="intro-title"><span class="greeting" data-zh="你好，我是">Hello, I'm</span><span class="hero-name">XieChengzong<span class="title-dot">.</span></span></h1>
+        <div class="intro-line" aria-hidden="true"><span></span>✳</div>
+        <p class="intro-text" data-zh="保持好奇，让探索留下轨迹。">Stay curious. Leave a trace.</p>
+        <p class="intro-note" data-zh="我是山东大学网络空间安全学院的一名研究生。这里记录我的研究、探索与成长。">I'm a graduate student at the School of Cyber Science and Technology, Shandong University. This is a space for my research, exploration and growth.</p>
+        <div class="intro-actions"><a class="button" href="#research"><span data-zh="了解我的研究">Explore my research</span><span aria-hidden="true">↗</span></a><a class="text-link" href="#contact"><span data-zh="联系我">Get in touch</span> <span aria-hidden="true">→</span></a></div>
+      </section>
+
+      <section class="content-section" id="research" aria-labelledby="research-title">
+        <div class="section-heading"><div><p class="section-kicker" data-zh="02 / 研究">02 / RESEARCH</p><h2 id="research-title" class="icon-heading"><svg class="icon" aria-hidden="true"><use href="#icon-research"/></svg><span data-zh="研究方向">Research interests</span></h2></div><span class="tag" data-zh="探索中">Exploring</span></div>
+        <div class="research-placeholder"><svg class="icon research-robot" aria-hidden="true"><use href="#icon-robot"/></svg><div><h3 data-zh="面向 AI 智能体的安全、高效执行环境">Secure and efficient execution environments for AI agents</h3><p data-zh="我的研究兴趣位于操作系统、系统安全与 AI 智能体基础设施的交叉领域，关注如何在现有 Linux 系统上，让智能体的工具执行更加轻量、可控、可观察。">My interests lie at the intersection of operating systems, systems security and AI agent infrastructure. I am exploring how to make agent tool execution lightweight, controllable and observable on existing Linux systems.</p></div></div>
+        <div class="research-topics">
+          <article class="research-topic"><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg><div><h3 data-zh="轻量沙箱与安全隔离">Lightweight sandboxing & isolation</h3><p data-zh="关注容器与沙箱的隔离边界，探索基于 Linux namespaces、权限控制等机制，约束智能体工具对进程、文件与网络的访问。">Understanding container and sandbox isolation boundaries, and exploring Linux namespaces and permission controls to constrain agent tools' access to processes, files and networks.</p></div></article>
+          <article class="research-topic"><svg class="icon" aria-hidden="true"><use href="#icon-research"/></svg><div><h3 data-zh="工具级资源治理与可观察性">Tool-level resource control & observability</h3><p data-zh="关注工具调用与底层进程之间的关联，探索利用 cgroups 及 eBPF 等机制进行资源观测与治理，研究 CPU、内存和 I/O 的使用及并发任务间的资源竞争。">Connecting tool calls to underlying processes, and exploring mechanisms such as cgroups and eBPF for resource monitoring and control, with a focus on CPU, memory, I/O and contention between concurrent tasks.</p></div></article>
+          <article class="research-topic"><svg class="icon" aria-hidden="true"><use href="#icon-code"/></svg><div><h3 data-zh="沙箱池化与执行环境生命周期">Sandbox pooling & execution lifecycles</h3><p data-zh="探索预创建、复用与回收执行环境的机制，评估启动延迟和资源开销，同时关注任务结束后的状态清理，避免文件、后台进程或敏感状态残留。">Exploring pre-creation, reuse and reclamation of execution environments to understand startup latency and resource overhead, while ensuring task cleanup does not leave behind files, background processes or sensitive state.</p></div></article>
+        </div>
+        <ul class="research-keywords" aria-label="Research keywords" data-zh-label="研究关键词"><li>Linux</li><li data-zh="系统安全">Systems security</li><li data-zh="AI 智能体">AI agents</li><li data-zh="容器与沙箱">Containers & sandboxes</li><li data-zh="资源管理">Resource management</li></ul>
+      </section>
+
+      <section class="content-section" id="publications" aria-labelledby="publications-title">
+        <div class="section-heading"><div><p class="section-kicker" data-zh="03 / 论文">03 / PUBLICATIONS</p><h2 id="publications-title" class="icon-heading"><svg class="icon" aria-hidden="true"><use href="#icon-paper"/></svg><span data-zh="论文列表">Publications</span></h2></div><span class="tag" data-zh="待更新">Coming soon</span></div>
+        <div class="empty-state"><span class="empty-icon" aria-hidden="true">≡</span><div><h3 data-zh="论文信息待补充">A place for future work.</h3><p data-zh="论文、相关资料及代码链接将在这里整理展示。">Papers, supporting materials and code will be collected here.</p></div></div>
+      </section>
+
+      <section class="content-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading"><div><p class="section-kicker" data-zh="04 / 项目">04 / PROJECTS</p><h2 id="projects-title" class="icon-heading"><svg class="icon" aria-hidden="true"><use href="#icon-code"/></svg><span data-zh="项目列表">Projects</span></h2></div><span class="tag" data-zh="待更新">Coming soon</span></div>
+        <div class="empty-state"><span class="empty-icon" aria-hidden="true">↗</span><div><h3 data-zh="项目故事，留待展开">Ideas, put into practice.</h3><p data-zh="项目介绍、实践记录与成果展示将在这里陆续发布。">Project stories, experiments and outcomes will be added as they take shape.</p></div></div>
+      </section>
+
+      <section class="content-section" id="education" aria-labelledby="education-title">
+        <div class="section-heading"><div><p class="section-kicker" data-zh="05 / 教育">05 / EDUCATION</p><h2 id="education-title" class="icon-heading"><svg class="icon" aria-hidden="true"><use href="#icon-cap"/></svg><span data-zh="教育经历">Education</span></h2></div></div>
+        <article class="education-entry"><div><h3 data-zh="山东大学">Shandong University</h3><p data-zh="网络空间安全学院">School of Cyber Science and Technology</p></div><span class="tag" data-zh="研究生">Graduate Student</span></article>
+      </section>
+
+      <section class="content-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading"><div><p class="section-kicker" data-zh="06 / 工作">06 / WORK</p><h2 id="work-title" class="icon-heading"><svg class="icon" aria-hidden="true"><use href="#icon-case"/></svg><span data-zh="工作经历">Work experience</span></h2></div></div>
+        <div class="empty-state"><span class="empty-icon" aria-hidden="true"><svg class="icon"><use href="#icon-case"/></svg></span><p data-zh="工作经历待补充。">Work experience will be added here.</p></div>
+      </section>
+
+      <section class="content-section" id="awards" aria-labelledby="awards-title">
+        <div class="section-heading"><div><p class="section-kicker" data-zh="07 / 荣誉">07 / HONORS</p><h2 id="awards-title" class="icon-heading"><svg class="icon" aria-hidden="true"><use href="#icon-award"/></svg><span data-zh="获奖经历">Honors & awards</span></h2></div></div>
+        <ul class="awards-list">
+          <li><span data-zh="全国大学生信息安全与对抗技术竞赛（ISCC）· 个人挑战赛">Information Security and Countermeasures Contest (ISCC) — Individual Challenge</span> <strong class="award-badge award-top" data-zh="全国一等奖">National First Prize</strong></li>
+          <li><span data-zh="全国大学生数学建模竞赛（CUMCM）">Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM)</span> <strong class="award-badge" data-award-level="provincial" data-zh="二等奖">Second Prize</strong></li>
+          <li><span data-zh="蓝桥杯 · 山东赛区 C/C++ 程序设计大学 B 组">Lan Qiao Cup — C/C++ Programming, Undergraduate Group B, Shandong Division</span> <strong class="award-badge" data-award-level="provincial" data-zh="二等奖">Second Prize</strong></li>
+          <li><span data-zh="iCAN 大学生创新创业大赛 · 山东赛区">iCAN College Student Innovation and Entrepreneurship Competition — Shandong Division</span> <strong class="award-badge" data-award-level="provincial" data-zh="三等奖">Third Prize</strong></li>
+          <li><span data-zh="山东省大学生网络安全技能大赛">Shandong Collegiate Cybersecurity Skills Competition</span> <strong class="award-badge" data-award-level="provincial" data-zh="三等奖">Third Prize</strong></li>
+          <li><span data-zh="山东省“技能兴鲁”职业技能大赛 · 网络安全赛项">Shandong “Jineng Xinglu” Vocational Skills Competition — Cybersecurity Track</span> <strong class="award-badge" data-award-level="provincial" data-zh="三等奖">Third Prize</strong></li>
+          <li><span data-zh="亚太地区大学生数学建模竞赛（APMCM）">Asia and Pacific Mathematical Contest in Modeling (APMCM)</span> <strong class="award-badge" data-zh="三等奖">Third Prize</strong></li>
+          <li><span data-zh="三次荣获“优秀学生奖学金”">Three-time recipient of the Outstanding Student Scholarship</span></li>
+          <li><span data-zh="获评“社会实践先进个人”（校级）">Outstanding Individual in Social Practice (University-level)</span></li>
+        </ul>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <p class="section-kicker" data-zh="08 / 联系">08 / CONTACT</p>
+        <h2 id="contact-title"><span data-zh="保持联系">Let's connect</span><span class="title-dot">.</span></h2>
+        <p data-zh="联系方式与个人简历将在完善后开放。">Contact details and a curriculum vitae will be available here soon.</p>
+        <div class="contact-items"><div><span class="contact-label icon-text"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg><span data-zh="邮箱">Email</span></span><span data-zh="待补充">To be added</span></div><div><span class="contact-label icon-text"><svg class="icon" aria-hidden="true"><use href="#icon-paper"/></svg><span data-zh="简历 PDF">CV / PDF</span></span><span data-zh="待上传">Not yet uploaded</span></div></div>
+      </section>
+      <footer class="site-footer"><span>© Cozz. / XieChengzong</span><span data-zh="每一步探索，都值得记录。">Every exploration leaves a trace.</span><a href="#home"><span data-zh="回到顶部">Back to top</span> ↑</a></footer>
+    </main>
+  </div>
+  <div class="sr-only" id="language-status" role="status" aria-live="polite"></div>
+</body>
+</html>

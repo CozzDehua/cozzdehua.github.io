@@ -1,0 +1,52 @@
+---
+title: Blog | Cozz.
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chengzong Xie — research notes and personal blog.">
+  <title>Blog | Cozz.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body class="blog-shell">
+  <header class="blog-header">
+    <a class="blog-brand" href="index.html">Cozz<span>.</span></a>
+    <div class="blog-actions">
+      <div class="language-switch" role="group" aria-label="Language" data-zh-label="语言" hidden>
+        <button type="button" data-language="en" lang="en" aria-pressed="true" aria-label="Switch to English">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-language="zh" lang="zh-CN" aria-pressed="false" aria-label="切换到中文">中文</button>
+      </div>
+      <a class="blog-back" href="index.html" data-zh="返回主页">← Back home</a>
+    </div>
+  </header>
+  <main class="blog-index">
+    <div class="blog-heading">
+      <div>
+        <p class="section-kicker" data-zh="博客 / 记录">BLOG / NOTES</p>
+        <h1 data-zh="博客文章">Blog posts</h1>
+        <p class="blog-lead" data-zh="记录研究、系统安全与 AI 智能体基础设施方面的思考。">Notes on research, systems security and AI agent infrastructure.</p>
+      </div>
+      <a class="upload-button" href="https://github.com/CozzDehua/cozz.github.io/upload/main/_posts" target="_blank" rel="noopener noreferrer" data-zh="上传 Markdown">Upload Markdown ↗</a>
+    </div>
+    <div class="upload-help">
+      <strong data-zh="发布方式">Publishing</strong>
+      <span data-zh="在 GitHub 上传 .md 文件到 _posts 文件夹；文件名格式为 YYYY-MM-DD-title.md，并在文件开头填写 title、date 和 layout: post。提交后 Pages 会自动发布。">Upload a .md file to the _posts folder on GitHub. Use YYYY-MM-DD-title.md and add title, date and layout: post at the top. GitHub Pages publishes it automatically after the commit.</span>
+    </div>
+    <div class="post-list">
+      {% for post in site.posts %}
+      <article class="post-card">
+        <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        {% if post.description %}<p>{{ post.description }}</p>{% else %}<p>{{ post.excerpt | strip_html | truncate: 180 }}</p>{% endif %}
+        <a class="post-read" href="{{ post.url | relative_url }}" data-zh="阅读文章">Read article →</a>
+      </article>
+      {% endfor %}
+    </div>
+  </main>
+</body>
+</html>
